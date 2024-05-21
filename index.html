@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my calculator</title>
+    <meta>
+    <meta>
+    <title>Kalkulator Keliling dan Luas Segitiga</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>welcome to my calculator</h1>
-        <section>
-            <p>
-                hai selamat datang di mycalculator
-            </p>
-        </section>
-    </header>
+    <h1> 
+        WELCOME TO MY CALCULATOR
+    </h1>
 
-    <section>
-        <div class="section-content">
-            <h3>segitiga</h3>
+    <button type="button" id="luas-segitiga"><u>luas segitiga</u></button>
+
+    <h2 style="text-align: center;">KELILING SEGITIGA</h2>
+
+    <div class="foto">
+        <img src="c:\Users\dell\Music\REWIND\segitiga revisi.jpg" alt="segitiga">
+    </div>
+    <div>
+        <h1>Kalkulator Keliling dan Luas Segitiga</h1>
+        <div>
+            <div>
+                <label>Sisi A:</label>
+                <input type="number" id="sisi2" name="sisi2" placeholder="SISI 2">
+            </div>
+            <div>
+                <label>Sisi B:</label>
+                <input type="number" id="Sisi1" name="sisi1" placeholder="SISI">
+            </div>
+            <div>
+                <label>Sisi C:</label>
+                <input type="number" id="alas" name="alas" placeholder="ALAS">
+            </div>
+
+            <div id="keliling"></div>
+            <div id="hasilkeliling"></div>
+            <button id="hasil" onclick="hasilkeliling()">Hitung</button>
+            <div>
+                <p>Keliling: </p>
+                <p>Luas: </p>
+            </div>
         </div>
-
-        <button type="button" id="switch-keliling">switch ke keliling segitiga</button>
-    </section>  
-
-    <section>
-        <div class="section-content">
-            <h2>luas segitiga</h2>
-        </div>
-    </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
