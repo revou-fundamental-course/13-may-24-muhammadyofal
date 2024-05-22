@@ -6,10 +6,17 @@ body {
 
 #luas-segitiga {
     width: 100%;
-    background-color: #333;
     margin-top: 1px;
+    border: 2px solid #ffffff; 
+    background-color: #9a9a9a; 
+    padding: 20px; 
+    text-align: center;
 }
 
+.scroll {
+    text-decoration: none;
+    color: #ffffff;
+}
 h1 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -58,9 +65,9 @@ button:hover {
 
 
 .foto {
-    scale: 100%;
+    scale: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 30vh;
     }
