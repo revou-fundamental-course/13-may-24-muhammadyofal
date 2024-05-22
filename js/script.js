@@ -9,6 +9,14 @@ function hasilKeliling() {
     ).innerHTML = `keliling : <br> ${alas} + ${sisi1} + ${sisi2} = ${keliling}`;
 }
 
+function resetKeliling() {
+    document.getElementById("alas").value = "";
+    document.getElementById("sisi1").value = "";
+    document.getElementById("sisi2").value = "";
+    document.getElementById("hasilsegitigakeliling").innerHTML = "keliling :";
+  }
+  
+
 function hasilLuas() {
     let bawah = document.getElementById("bawah").value;
     let tinggi = document.getElementById("tinggi").value;
@@ -18,6 +26,14 @@ function hasilLuas() {
         "luasHasil"
     ).innerHTML = `Luas: <br> ${0.5} * ${bawah} * ${tinggi} = ${luas}`;
 }
+
+
+function resetLuas() {
+    document.getElementById("bawah").value = "";
+    document.getElementById("tinggi").value = "";
+    document.getElementById("luasHasil").innerHTML = "Luas:";
+  }
+
 
 document.querySelectorAll('a.scroll').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
