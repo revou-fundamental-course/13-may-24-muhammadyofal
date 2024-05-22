@@ -3,7 +3,7 @@ function hasilKeliling() {
     let sisi1 = document.getElementById("sisi1").value;
     let sisi2 = document.getElementById("sisi2").value;
 
-    let keliling = alas + sisi1 + sisi2;
+    let keliling =parseInt(alas) + parseInt(sisi1) + parseInt(sisi2);
     document.getElementById(
         "hasilsegitigakeliling"
     ).innerHTML = `keliling : <br> ${alas} + ${sisi1} + ${sisi2} = ${keliling}`;
