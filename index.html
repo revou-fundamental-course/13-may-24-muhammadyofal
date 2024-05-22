@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta>
-    <meta>
-    <title>Kalkulator Keliling dan Luas Segitiga</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1> 
-        WELCOME TO MY CALCULATOR
-    </h1>
+    <head>
+        <meta>
+        <meta>
+        <title>Kalkulator Keliling dan Luas Segitiga</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-    <button type="button" id="luas-segitiga"><u>luas segitiga</u></button>
+        <section id="KELILING-SEGITIGA">
+            <h1> 
+                WELCOME TO MY CALCULATOR
+            </h1>
+            <button id="luas-segitiga">
+                <u>
+                    <a href="#LUAS-SEGITIGA" class="scroll">LUAS SEGITIGA</a>
+                </u>
+            </button>
 
-    <h2 style="text-align: center;">KELILING SEGITIGA</h2>
+            <h2 style="text-align: center;">KELILING SEGITIGA</h2>
 
-    <div class="foto">
-        <img src="c:\Users\dell\Music\REWIND\segitiga revisi.jpg" alt="segitiga">
-    </div>
-    <div>
-        <h1>Kalkulator Keliling dan Luas Segitiga</h1>
-        <div>
-            <div>
-                <label>Sisi A:</label>
-                <input type="number" id="sisi2" name="sisi2" placeholder="SISI 2">
-            </div>
-            <div>
-                <label>Sisi B:</label>
-                <input type="number" id="Sisi1" name="sisi1" placeholder="SISI">
-            </div>
-            <div>
-                <label>Sisi C:</label>
-                <input type="number" id="alas" name="alas" placeholder="ALAS">
+            <div class="foto">
+                <img src="c:\Users\dell\Music\REWIND\segitiga revisi.jpg" alt="segitiga">
             </div>
 
-            <div id="keliling"></div>
-            <div id="hasilkeliling"></div>
-            <button id="hasil" onclick="hasilkeliling()">Hitung</button>
-            <div>
-                <p>Keliling: </p>
-                <p>Luas: </p>
+                <h1>Kalkulator Keliling dan Luas Segitiga</h1>
+                <div>
+                    <div>
+                        <label>Sisi A:</label>
+                        <input id="sisi2" placeholder="SISI 2" type="number">
+                    </div>
+                    <div>
+                        <label>Sisi B:</label>
+                        <input id="sisi1" placeholder="SISI 1" type="number" >
+                    </div>
+                    <div>
+                        <label>Sisi C:</label>
+                        <input id="alas" placeholder="ALAS" type="number">
+                    </div>
+
+                    <button type="button" onclick="hasilKeliling()">Hitung</button>
+                    <h4 id="hasilsegitigakeliling">keliling :</h4>
+            
+                </div>
+        </section>
+
+        <Section id="LUAS-SEGITIGA">
+            <button id="luas-segitiga">
+                <u>
+                    <a href="#KELILING-SEGITIGA" class="scroll">KELILING SEGITIGA</a>
+                </u>
+            </button>
+                <h2 style="text-align: center;">LUAS SEGITIGA</h2>
+            <div class="foto">
+                <img src="c:\Users\dell\Music\REWIND\segitiga revisi.jpg" alt="segitiga">
             </div>
+            <div>
+                <h1>Kalkulator Keliling dan Luas Segitiga</h1>
+                <div>
+                    <div>
+                        <label>ALAS</label>
+                        <input type="number" id="bawah" placeholder="SISI 2">
+                    </div>
+                    <div>
+                        <label>TINGGI</label>
+                        <input type="number" id="tinggi" placeholder="SISI">
+                    </div>
+
+                    <button onclick="hasilLuas()">Hitung</button>
+                    <div>
+                        <h4 id="luasHasil">Luas:</h4>
+                    </div>
+                </div>
+            </Section>
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+
+
+        <script src="js/script.js"></script>
+
+    </body>
 </html>
